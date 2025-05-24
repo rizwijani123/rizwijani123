@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Editor Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="navbar">
+    <h1>Video Editor</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('portfolio')">Portfolio</button>
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('services')">Services</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <div class="hero">
+        <video autoplay muted loop playsinline>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4 " type="video/mp4">
+        </video>
+        <div class="hero-text">
+          <h2>Hi, I'm Alex — A Professional Video Editor</h2>
+          <p>Crafting clean, engaging, and visually compelling edits that stand out.</p>
+          <button onclick="showSection('portfolio')">View My Work</button>
+          <button onclick="showSection('contact')">Contact Me</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="card">
+          <iframe src="https://www.youtube.com/embed/abc123 " allowfullscreen></iframe>
+          <h3>Tech Unboxing Series</h3>
+        </div>
+        <div class="card">
+          <iframe src="https://www.youtube.com/embed/def456 " allowfullscreen></iframe>
+          <h3>Fashion Reel</h3>
+        </div>
+        <div class="card">
+          <iframe src="https://www.youtube.com/embed/ghi789 " allowfullscreen></iframe>
+          <h3>Luxury Skincare Ad</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a professional video editor with over 7 years of experience crafting engaging content for YouTube, social media, commercials, and more.</p>
+    </section>
+
+    <section id="services">
+      <h2>What I Offer</h2>
+      <ul>
+        <li><strong>YouTube Editing</strong> - Weekly or one-off vlogs, reviews, tutorials.</li>
+        <li><strong>Short-form Content</strong> - Trendy, fast-paced Reels/TikTok editing.</li>
+        <li><strong>Motion Graphics</strong> - Lower thirds, animations, After Effects.</li>
+        <li><strong>Color Grading</strong> - Cinematic looks using DaVinci Resolve.</li>
+        <li><strong>Audio Mixing</strong> - Voiceover clarity, music balance.</li>
+        <li><strong>Commercial Edits</strong> - Brand-focused storytelling.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: hello@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Video Editor | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
